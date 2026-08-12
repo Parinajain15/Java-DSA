@@ -6,6 +6,7 @@ int nums[][] = new int[3][];
 nums[0] = new int[3];
 nums[1]=new int[4];
 nums[2]=new int[5];
+//jagged array — rows have different lengths.
 
 for(int i=0; i<3; i++)
 {

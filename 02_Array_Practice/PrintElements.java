@@ -4,7 +4,7 @@ public class PrintElements {
         //if 1d array int p[] = {1,2,3,4}; for(int i=0; i<p.length; i++) { System.out.print(p[i]+ " ");}
 
         int nums[][] = new int[3][4];
-        int random;
+        
         for(int i=0; i<3; i++)
         {
             for(int j=0; j<4; j++)

@@ -2,7 +2,7 @@ public class MultiDimensionalArray
 {
     public static void main(String args[])
     {
-    int random=0;
+    
     {
         int nums[][] = new int[3][4];
         for(int i=0; i<3; i++)

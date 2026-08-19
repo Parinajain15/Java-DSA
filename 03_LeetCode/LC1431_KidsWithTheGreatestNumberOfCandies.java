@@ -1,36 +1,35 @@
-import java.util.ArrayList;
-
 public class LC1431_KidsWithTheGreatestNumberOfCandies
 {
     public static void main(String args[])
     {
+        int extraCandies =3;
+        int r;
+        int largest =0;
         int candies[] = {2,3,5,1,3};
-        int extraCandies = 3;
 
-        int largest = candies[0];
-
-        for(int i = 0; i < candies.length; i++)
+        for(int i=0; i<candies.length; i++)
         {
             if(candies[i] > largest)
             {
                 largest = candies[i];
             }
         }
-
-        ArrayList<Boolean> ans = new ArrayList<>();
-
-        for(int i = 0; i < candies.length; i++)
+        boolean result[] = new boolean[candies.length];
+        for(int i =0; i<result.length; i++)
         {
-            if(candies[i] + extraCandies >= largest)
+            r = candies[i] + extraCandies;
+            if( r >= largest)
             {
-                ans.add(true);
+                result[i] = true;
             }
             else
             {
-                ans.add(false);
+                result[i] = false;
             }
         }
-
-        System.out.println(ans);
-    }
-}
+        for(int i =0; i<result.length; i++)
+        {
+            System.out.print(result[i] + " ");
+        }
+          }
+           }
